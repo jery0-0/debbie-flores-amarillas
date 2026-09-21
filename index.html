@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Debbie 🌻</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- FONDO DE PARTÍCULAS -->
+    <div id="particles"></div>
+
+    <!-- PANTALLA DE INICIO -->
+<section id="inicio" class="pantalla activa">
+
+    <div class="contenido-inicio">
+
+        <div class="corazon-flotante">
+            💛
+        </div>
+
+        <p class="pequeno">
+            Hay una pequeña sorpresa para ti...
+        </p>
+
+        <h1>
+            Para Debbie
+            <span>🌻</span>
+        </h1>
+
+        <div class="linea-decorativa"></div>
+
+        <p class="frase-inicial">
+            Antes de continuar, quédate un pequeño momento...
+        </p>
+
+        <p class="subfrase">
+            Preparé esto especialmente para ti.
+        </p>
+
+        <button id="btnComenzar" class="boton principal">
+            Abrir sorpresa ✨
+        </button>
+
+        <p class="aviso-inicio">
+            🌼 Una pequeña experiencia hecha con cariño 🌼
+        </p>
+
+    </div>
+
+</section>
+    </section>
+
+
+    <!-- SECCIÓN 21 DE SEPTIEMBRE -->
+    <section id="fecha" class="pantalla">
+
+        <div class="contenido">
+
+            <p class="etiqueta">21 DE SEPTIEMBRE</p>
+
+            <h2>
+                Hoy las flores amarillas
+                tienen un significado especial 🌻
+            </h2>
+
+            <div class="flor-grande">
+                🌻
+            </div>
+
+            <p class="texto">
+                Pero esta vez no quería simplemente regalarte
+                una flor...
+            </p>
+
+            <p class="texto destacado">
+                Quería regalarte un pequeño momento
+                hecho especialmente para ti. 💛
+            </p>
+
+            <button class="boton siguiente" data-next="jardin">
+                Ver mi sorpresa 🌻
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- JARDÍN INTERACTIVO -->
+    <section id="jardin" class="pantalla">
+
+        <div class="contenido">
+
+            <p class="etiqueta">UN PEQUEÑO JARDÍN PARA TI</p>
+
+            <h2>
+                Hay algo escondido
+                en cada flor...
+            </h2>
+
+            <p class="texto">
+                Haz clic en las flores y descubre
+                lo que quiero decirte.
+            </p>
+
+            <div class="progreso">
+                <span id="contador">0</span> / 6 flores descubiertas
+            </div>
+
+            <div class="jardin-flores">
+
+                <button class="flor-interactiva" data-mensaje="Tu alegría es una de esas cosas que hacen que cualquier momento sea mucho más bonito. 💛">
+                    🌻
+                </button>
+
+                <button class="flor-interactiva" data-mensaje="Tienes una forma muy especial de tratar a las personas. Tu empatía dice muchísimo de tu corazón. 🌼">
+                    🌻
+                </button>
+
+                <button class="flor-interactiva" data-mensaje="Tu sonrisa tiene algo especial. Es de esas sonrisas que simplemente alegran el día. 😊">
+                    🌻
+                </button>
+
+                <button class="flor-interactiva" data-mensaje="Nunca dudes del valor que tienes como persona. Eres alguien grandiosa y muy especial. 💛">
+                    🌻
+                </button>
+
+                <button class="flor-interactiva" data-mensaje="Gracias por todos los momentos, conversaciones y recuerdos que hemos compartido. 🌻">
+                    🌻
+                </button>
+
+                <button class="flor-interactiva" data-mensaje="Y si pudiera pedir algo para este día, sería poder seguir compartiendo muchos momentos contigo. ✨">
+                    🌻
+                </button>
+
+            </div>
+
+            <button id="btnCarta" class="boton siguiente oculto">
+                Debbie, todavía queda algo para ti... 💌
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- CARTA -->
+    <section id="carta" class="pantalla">
+
+        <div class="contenido">
+
+            <p class="etiqueta">UNA ÚLTIMA SORPRESA</p>
+
+            <h2>
+                Hay algo que quiero decirte...
+            </h2>
+
+            <div id="sobre" class="sobre">
+
+                <div class="tapa"></div>
+
+                <div class="papel">
+                    <span>💌</span>
+                </div>
+
+            </div>
+
+            <button id="btnAbrir" class="boton principal">
+                🌻 Abrir
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- CARTA ABIERTA -->
+    <section id="cartaFinal" class="pantalla">
+
+        <div class="carta-container">
+
+            <div class="carta-header">
+                <span>🌻</span>
+                <h2>Para Debbie</h2>
+                <span>🌻</span>
+            </div>
+
+            <div class="foto-container">
+
+                <img
+                    src="img/debbie.jpg"
+                    alt="Foto de Debbie"
+                    id="fotoDebbie"
+                    onerror="this.style.display='none'; document.getElementById('fotoAviso').style.display='block';"
+                >
+
+                <div id="fotoAviso" class="foto-aviso">
+                    📸
+                    <p>
+                        Aquí irá la foto de Debbie
+                    </p>
+                    <small>
+                        Coloca tu imagen en la carpeta
+                        <b>img</b> con el nombre
+                        <b>debbie.jpg</b>
+                    </small>
+                </div>
+
+            </div>
+
+            <div class="carta-texto">
+
+                <p>
+                    Debbie, quiero que sepas que eres una persona
+                    realmente grandiosa.
+                </p>
+
+                <p>
+                    Eres carismática, alegre, empática y tienes
+                    un corazón muy bonito. Tu forma de ser y esa
+                    sonrisa que tienes hacen que sea muy fácil
+                    apreciar la persona tan especial que eres.
+                </p>
+
+                <p>
+                    Quiero agradecerte muchísimo por haber estado
+                    conmigo, por cada momento, cada conversación
+                    y por todas esas veces en las que has estado ahí.
+                </p>
+
+                <p>
+                    Quizás no siempre encuentre las palabras exactas
+                    para decirte lo mucho que valoro tu presencia,
+                    pero quiero que sepas que significa muchísimo
+                    para mí.
+                </p>
+
+                <p>
+                    Espero que la vida te siga dando muchos motivos
+                    para sonreír, porque personas como tú merecen
+                    recibir cosas bonitas.
+                </p>
+
+                <p>
+                    Y, sobre todo, espero que me permitas seguir
+                    estando a tu lado, compartiendo momentos,
+                    riéndonos y creando nuevos recuerdos.
+                </p>
+
+                <p>
+                    Gracias por ser tú, Debbie.
+                    Nunca cambies esa forma tan bonita de ser. 🌻💛
+                </p>
+
+                <p class="firma">
+                    Con mucho cariño,<br>
+                    <strong>Jeremy</strong>
+                </p>
+
+            </div>
+
+            <button id="btnFinal" class="boton siguiente">
+                Hay algo más... ✨
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- FINAL -->
+    <section id="final" class="pantalla">
+
+        <div class="final-contenido">
+
+            <div class="lluvia-flores">
+                🌻 🌼 🌻 🌼 🌻
+            </div>
+
+            <h1>
+                Gracias por existir,
+                Debbie. 💛
+            </h1>
+
+            <p>
+                Espero que este pequeño detalle
+                te saque una sonrisa.
+            </p>
+
+            <div class="flor-final">
+                🌻
+            </div>
+
+            <p class="final-frase">
+                Que nunca te falten motivos para sonreír.
+            </p>
+
+            <button id="btnReiniciar" class="boton">
+                Volver a comenzar 🔄
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- VENTANA DE MENSAJES -->
+    <div id="modal" class="modal">
+
+        <div class="modal-contenido">
+
+            <button id="cerrarModal" class="cerrar">
+                ×
+            </button>
+
+            <div class="modal-flor">
+                🌻
+            </div>
+
+            <p id="mensajeModal"></p>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
